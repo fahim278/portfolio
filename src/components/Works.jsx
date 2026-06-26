@@ -24,7 +24,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-tertiary p-5 rounded-2xl w-full h-full flex flex-col'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -47,9 +47,9 @@ const ProjectCard = ({
           </div>
         </div>
 
-        <div className='mt-5'>
+        <div className='mt-5 flex-1 flex flex-col'>
           <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <p className='mt-2 text-secondary text-[14px] flex-grow'>{description}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -80,15 +80,11 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+"The following projects showcase my expertise in AI/ML integration and Full-Stack development. Each project represents a real-world application of technologies like LLMs, Computer Vision, and Django, demonstrating my ability to handle complex data and build intelligent, user-centric solutions. You will find links to the code repositories to explore my technical implementation."
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7'>
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}

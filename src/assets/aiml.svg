@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="ai1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D4FF"/>
+      <stop offset="100%" stop-color="#0080FF"/>
+    </linearGradient>
+    <linearGradient id="ai2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF00FF"/>
+      <stop offset="100%" stop-color="#8000FF"/>
+    </linearGradient>
+  </defs>
+  <!-- Brain/Neural Network Icon -->
+  <circle cx="128" cy="80" r="15" fill="url(#ai1)"/>
+  <circle cx="80" cy="130" r="12" fill="url(#ai1)"/>
+  <circle cx="176" cy="130" r="12" fill="url(#ai1)"/>
+  <circle cx="60" cy="180" r="10" fill="url(#ai2)"/>
+  <circle cx="100" cy="180" r="10" fill="url(#ai2)"/>
+  <circle cx="156" cy="180" r="10" fill="url(#ai2)"/>
+  <circle cx="196" cy="180" r="10" fill="url(#ai2)"/>
+  
+  <!-- Connections -->
+  <line x1="128" y1="95" x2="80" y2="118" stroke="url(#ai1)" stroke-width="2" opacity="0.6"/>
+  <line x1="128" y1="95" x2="176" y2="118" stroke="url(#ai1)" stroke-width="2" opacity="0.6"/>
+  <line x1="80" y1="142" x2="60" y2="170" stroke="url(#ai2)" stroke-width="2" opacity="0.6"/>
+  <line x1="80" y1="142" x2="100" y2="170" stroke="url(#ai2)" stroke-width="2" opacity="0.6"/>
+  <line x1="176" y1="142" x2="156" y2="170" stroke="url(#ai2)" stroke-width="2" opacity="0.6"/>
+  <line x1="176" y1="142" x2="196" y2="170" stroke="url(#ai2)" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Additional layer -->
+  <circle cx="128" cy="220" r="14" fill="#00FF88"/>
+  <line x1="60" y1="190" x2="128" y2="206" stroke="#00FF88" stroke-width="2" opacity="0.4"/>
+  <line x1="100" y1="190" x2="128" y2="206" stroke="#00FF88" stroke-width="2" opacity="0.4"/>
+  <line x1="156" y1="190" x2="128" y2="206" stroke="#00FF88" stroke-width="2" opacity="0.4"/>
+  <line x1="196" y1="190" x2="128" y2="206" stroke="#00FF88" stroke-width="2" opacity="0.4"/>
+  
+  <!-- CPU/Chip border -->
+  <rect x="40" y="60" width="176" height="176" rx="8" fill="none" stroke="url(#ai1)" stroke-width="3" opacity="0.3"/>
+  <circle cx="50" cy="70" r="4" fill="url(#ai1)"/>
+  <circle cx="206" cy="70" r="4" fill="url(#ai1)"/>
+  <circle cx="50" cy="226" r="4" fill="url(#ai2)"/>
+  <circle cx="206" cy="226" r="4" fill="url(#ai2)"/>
+</svg>
